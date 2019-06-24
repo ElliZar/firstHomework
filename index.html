@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Homework</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Homework</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href='dist/main.css'>
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
-	<section class="page">
+  <section class="page">
     <div class="page__sidebar sidebar">
 
       <div class="sidebar__logo"></div>
 
       <ul class="sidebar__menu menu">
         <li class="menu__item"><a href="" class="menu__link">
-          <img src="src/img/Callendar.svg" alt="">
-        </a></li>
+            <img src="src/img/Callendar.svg" alt="">
+            <div class="ellipse">
+              <p class="ellipse__number">1</p>
+            </div>
+          </a></li>
         <li class="menu__item"><a href="" class="menu__link">
-          <img src="src/img/person.svg" alt="">
-        </a></li>
+            <img src="src/img/person.svg" alt="">
+          </a></li>
         <li class="menu__item"><a href="" class="menu__link">
-          <img src="src/img/Settings.svg" alt="">
-        </a></li>
+            <img src="src/img/Settings.svg" alt="">
+          </a></li>
         <li class="menu__item"><a href="" class="menu__link">
-          <img src="src/img/team.svg" alt="">
-        </a></li>
+            <img src="src/img/team.svg" alt="">
+          </a></li>
         <li class="menu__item"><a href="" class="menu__link">
-          <img src="src/img/letter.svg" alt="">
-        </a></li>
+            <img src="src/img/letter.svg" alt="">
+            <img src="/dist/images/line.svg" alt="" class="line">
+          </a></li>
       </ul>
     </div>
 
@@ -39,99 +46,163 @@
       <div class="header">
         <ul class="header__menu">
           <li class="header__item">Home</li>
+          <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.13514 0L4.85176e-08 0.98587L3.72973 4.22516L4.85176e-08 7.46445L1.13514 8.45032L6 4.22516L1.13514 0Z" fill="#0AD69C"/>
+            </svg>
           <li class="header__item">Network</li>
         </ul>
 
         <div class="header__user profile">
           <img src="src/img/profile.svg" alt="" class="profile__img">
-          <span class="profile__name">Sarah Freeman</span>  
-          <i class="fas fa-chevron-down"></i>         
+          <span class="profile__name">Sarah Freeman</span>
+          <i class="fas fa-chevron-down"></i>
         </div>
       </div>
       <div class="messages">
         <ul class="messages__users list">
-          <li class="list__friend item">
+          <li class="list__friend item active">
             <img src="dist/images/person1.svg" alt="">
             <div class="item__msg">
-              <h6>Miranda Hops</h6>
+              <h6>Miranda Hops
+                  <div class="item__online"></div>
+              </h6>
               <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+              <img src="/dist/images/pin.svg" alt="" class="item__pin">
             </div>
           </li>
           <li class="list__friend item">
             <img src="dist/images/person2.svg" alt="">
             <div class="item__msg">
-              <h6>Miranda Hops</h6>
+              <h6>Barry Callebaut</h6>
               <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
             </div>
           </li>
           <li class="list__friend item">
             <img src="dist/images/person3.svg" alt="">
             <div class="item__msg">
-              <h6>Miranda Hops</h6>
+              <h6>Stacey Dosh
+                  <div class="item__online"></div>
+              </h6>
               <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
             </div>
           </li>
           <li class="list__friend item">
             <img src="dist/images/person4.svg" alt="">
             <div class="item__msg">
-              <h6>Miranda Hops</h6>
+              <h6>Michael Kors</h6>
               <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
             </div>
           </li>
           <li class="list__friend item">
             <img src="dist/images/person5.svg" alt="">
             <div class="item__msg">
-              <h6>Miranda Hops</h6>
+              <h6>Johny Cash
+                  <div class="item__online"></div>
+              </h6>
               <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
             </div>
           </li>
           <li class="list__friend item">
             <img src="dist/images/person6.svg" alt="">
             <div class="item__msg">
-              <h6>Miranda Hops</h6>
+              <h6>Stacey Dosh</h6>
               <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
             </div>
           </li>
-        </ul>  
+        </ul>
         <div class="messages__chat">
           <div class="search">
             <i class="fas fa-search"></i>
             <input type="text" placeholder="Search messages..." class="search__input">
           </div>
-          <div class="dialog"></div>
-            <ul class="">
-              <li class="">
-                <img src="/src/img/person1.svg" alt="">
-              </li>
-              <li class="">
-
-              </li>
-              <li class="">
-                <img src="/src/img/person1.svg" alt="">
-              </li>
-              <li class="">
-
-              </li>
-              <li class="">
-                <img src="/src/img/person1.svg" alt="">
-              </li>
-              <li class="">
-
-              </li>
-              <li class="">
-                <img src="/src/img/person1.svg" alt="">
-              </li>
-              <li class="">
-
-              </li>
-            </ul>
+          <ul class="dialog">
+            <li class="dialog__date">
+              <p>Today, 17.03.2018</p>
+            </li>
+            <li class="dialog__message">
+              <img src="/dist/images/person1.svg" alt="" class="dialog__img">
+              <div class="dialog__body">
+                <p>On the other hand, we denounce with righteous indignation!</p>
+                <span class="dialog__time">01:14</span>
+              </div>
+            </li>
+            <li class="dialog__myMessage">
+              <div class="dialog__body">
+                <p>Which is the same as saying?
+                </p>
+                <span class="dialog__time">01:38</span>
+              </div>
+            </li>
+            <li class="dialog__message">
+              <img src="/dist/images/person1.svg" alt="" class="dialog__img">
+              <div class="dialog__body">
+                <p>But in certain circumstances and owing to the claims of duty or the obligations of business it will
+                  frequently occur
+                  that pleasures.
+                </p>
+                <span class="dialog__time">01:14</span>
+              </div>
+            </li>
+            <li class="dialog__myMessage">
+              <div class="dialog__body">
+                <p>To take a trivial example, which of us ever undertakes)
+                </p>
+                <span class="dialog__time">01:38</span>
+              </div>
+            </li>
+            <li class="dialog__message">
+              <img src="/dist/images/person1.svg" alt="" class="dialog__img">
+              <div class="dialog__body">
+                <p>But in certain circumstances and owing to the claims of duty or the obligations of business it will
+                  frequently occur
+                  that pleasures.
+                </p>
+                <span class="dialog__time">01:14</span>
+              </div>
+            </li>
+            <li class="dialog__myMessage">
+              <div class="dialog__body">
+                <p>To take a trivial example, which of us ever undertakes)
+                </p>
+                <span class="dialog__time">01:38</span>
+              </div>
+            </li>
+            <li class="dialog__message">
+              <img src="/dist/images/person1.svg" alt="" class="dialog__img">
+              <div class="dialog__body">
+                <p>But in certain circumstances and owing to the claims of duty or the obligations of business it will
+                  frequently occur
+                  that pleasures.
+                </p>
+                <span class="dialog__time">01:14</span>
+              </div>
+            </li>
+            <li class="dialog__myMessage">
+              <div class="dialog__body">
+                <p>To take a trivial example, which of us ever undertakes)
+                </p>
+                <span class="dialog__time">01:38</span>
+              </div>
+            </li>
+          </ul>
+          <div class="send">
+              <textarea class="send__input" type="text" placeholder="Write a message..."></textarea>
+              <div class="send__img">
+                  <img src="/dist/images/smile.svg" alt="" class="">
+                  <img src="/dist/images/paperClip.svg" alt="" class="">
+                  <button class="send__msg">
+                      <img src="/dist/images/send.svg" alt="">
+                  </button>
+              </div>
           </div>
+
+        </div>
       </div>
     </div>
   </section>
 
 
-	<script src="dist/js/index.min.js"></script>
+  <script src="dist/js/index.min.js"></script>
 </body>
-</html>
 
+</html>
