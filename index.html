@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>Homework</title>
@@ -14,11 +13,9 @@
 </head>
 
 <body>
-  <section class="page">
-    <div class="page__sidebar sidebar">
-
-      <div class="sidebar__logo"></div>
-
+  <main class="page">
+    <aside class="sidebar">
+      <figure class="sidebar__logo"></figure>
       <ul class="sidebar__menu menu">
         <li class="menu__item"><a href="" class="menu__link">
             <img src="dist/images/Callendar.svg" alt="">
@@ -40,10 +37,10 @@
             <img src="dist/images/line.svg" alt="" class="line">
           </a></li>
       </ul>
-    </div>
+    </aside>
 
-    <div class="page__content">
-      <div class="header">
+    <section>
+      <header class="header">
         <ul class="header__menu">
           <li class="header__item">Home</li>
           <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,56 +54,60 @@
           <span class="profile__name">Sarah Freeman</span>
           <i class="fas fa-chevron-down"></i>
         </div>
-      </div>
-      <div class="messages">
+        <!-- <div class="menu__profile">
+
+        </div> -->
+      </header>
+      
+      <article class="messages">
         <ul class="messages__users list">
-          <li class="list__friend item active">
-            <img src="dist/images/person1.svg" alt="">
-            <div class="item__msg">
-              <h6>Miranda Hops
-                  <div class="item__online"></div>
-              </h6>
-              <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
-              <img src="dist/images/pin.svg" alt="" class="item__pin">
+          <li class="list__friend friend active">
+            <img src="dist/images/person1.svg" alt="" class="friend__ava">
+            <div class="friend__chat">
+              <span class="friend__name">Miranda Hops
+                  <div class="friend__online"></div>
+                  <img src="dist/images/pin.svg" alt="" class="friend__pin">
+              </span>
+              <p class="friend__msg">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             </div>
           </li>
-          <li class="list__friend item">
-            <img src="dist/images/person2.svg" alt="">
-            <div class="item__msg">
-              <h6>Barry Callebaut</h6>
-              <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+          <li class="list__friend friend">
+            <img src="dist/images/person2.svg" alt="" class="friend__ava">
+            <div class="friend__chat">
+              <span class="friend__name">Barry Callebaut</span>
+              <p class="friend__msg">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             </div>
           </li>
-          <li class="list__friend item">
-            <img src="dist/images/person3.svg" alt="">
-            <div class="item__msg">
-              <h6>Stacey Dosh
-                  <div class="item__online"></div>
-              </h6>
-              <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+          <li class="list__friend friend">
+            <img src="dist/images/person3.svg" alt="" class="friend__ava">
+            <div class="friend__chat">
+              <span class="friend__name">Stacey Dosh
+                  <div class="friend__online"></div>
+              </span>
+              <p class="friend__msg">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             </div>
           </li>
-          <li class="list__friend item">
-            <img src="dist/images/person4.svg" alt="">
-            <div class="item__msg">
-              <h6>Michael Kors</h6>
-              <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+          <li class="list__friend friend">
+            <img src="dist/images/person4.svg" alt="" class="friend__ava">
+            <div class="friend__chat">
+              <span class="friend__name">Michael Kors</span>
+              <p class="friend__msg">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             </div>
           </li>
-          <li class="list__friend item">
-            <img src="dist/images/person5.svg" alt="">
-            <div class="item__msg">
-              <h6>Johny Cash
-                  <div class="item__online"></div>
-              </h6>
-              <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+          <li class="list__friend friend">
+            <img src="dist/images/person5.svg" alt="" class="friend__ava">
+            <div class="friend__chat">
+              <span class="friend__name">Johny Cash
+                <div class="friend__online"></div>
+              </span>
+              <p class="friend__msg">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             </div>
           </li>
-          <li class="list__friend item">
-            <img src="dist/images/person6.svg" alt="">
-            <div class="item__msg">
-              <h6>Stacey Dosh</h6>
-              <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+          <li class="list__friend friend">
+            <img src="dist/images/person6.svg" alt="" class="friend__ava">
+            <div class="friend__chat">
+              <span class="friend__name">Stacey Dosh</span>
+              <p class="friend__msg">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             </div>
           </li>
         </ul>
@@ -197,9 +198,9 @@
           </div>
 
         </div>
-      </div>
-    </div>
-  </section>
+      </article>
+    </section>
+  </main>
 
 
   <script src="dist/js/index.min.js"></script>
