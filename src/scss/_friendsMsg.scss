@@ -8,6 +8,10 @@
         height: 16.6%;
         display: flex;
         align-items: center;
+        @include responds_480px{
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
     }
 }
 .friend{
@@ -16,10 +20,16 @@
     &__chat{
         padding-left: 15px;
         width: 70%;
+        @include responds_768px{
+            display: none;
+        }
     }
     &__ava{
         display: block;
         margin-left: 20px;
+        @include responds_1024px{
+            margin-left: 10px;
+        }
     }
     &__name{
         font-family: $exo2;

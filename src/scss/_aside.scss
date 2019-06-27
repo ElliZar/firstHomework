@@ -4,6 +4,9 @@
     background-color: #01134E;
     display: flex;
     flex-direction: column;
+    @include responds_480px{
+        width: 60px;
+    }
     &__logo{
         margin: 20px auto;
         background-image: url("images/logo.svg");
@@ -17,6 +20,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        @include responds_768px{
+            padding-right: 20px;
+            padding-left: 20px;
+        }
     }
     
 }
@@ -43,6 +50,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include responds_480px{
+        top: 55%;
+        left: 2%;
+    }
     &__number{
         color: #fff;
         font-size: 12px;
@@ -55,7 +66,7 @@
     top: 55px;
     left: -25px;
     border-radius: 5px;
-}
-@media (min-width : 320px) and (max-width: 401px){
-    
+    @include responds_480px{
+        display: none;
+    }
 }

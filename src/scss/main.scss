@@ -21,10 +21,9 @@ a{
 @media (min-width: 320px) and (max-width: 401px){
     
 }
-
+@import "_mixins.scss";
 @import "_aside.scss";
 @import "_header.scss";
 @import "_friendsMsg.scss";
 @import "_messages.scss";
 @import "_scrollbar.scss";
-@import "_mixins.scss";
