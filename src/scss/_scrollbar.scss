@@ -3,30 +3,4 @@
     background-repeat:no-repeat;
     width:5px;
     height:0px
-    }
-    
-    ::-webkit-scrollbar-track {
-    background-color:#ecedee
-    }
-    
-    ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    background-color:#7ba1a5;
-    }
-    
-    ::-webkit-scrollbar-thumb:hover{
-    background-color:#6dabb1;
-    }
-    
-    ::-webkit-resizer{
-    background-image:url('');
-    background-repeat:no-repeat;
-    width:4px;
-    height:0px
-    }
-    
-    ::-webkit-scrollbar{
-    width: 4px;
-    background-color: #F5F5F5;
-    }
+}
