@@ -1,0 +1,168 @@
+.messages{
+    width: 90%;
+    height: 75%;
+    margin: 30px auto;
+    display: flex;
+    box-shadow: 0px 0px 30px rgba(153, 163, 174, 0.06);
+    border-radius: 4px;
+
+    &__users{
+        width: 300px;
+        background-color: rgb(255, 255, 255);
+    }
+    &__chat{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    background-color: #fff;
+    border-bottom: 1px solid #EDF0F4;
+    padding-left: 20px;
+
+    &__input{
+        width: 184px;
+        border: none;
+        outline: none;
+        
+
+        &::placeholder{
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            mix-blend-mode: normal;
+        }
+    }
+}
+.dialog{
+    width: 100%;
+    height: 85%;
+    margin: 0 auto;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    &__message{
+        margin-left: 5%;
+        display: flex;
+        width: 90%;
+        margin-bottom: 5%;
+        justify-content: flex-start;
+        position: relative;
+    }
+    &__myMessage{
+        padding-bottom: 50px;
+        display: flex;
+        width: 90%;
+        justify-content: flex-end;
+        position: relative;
+    }
+    &__body{
+        margin-left: 50px;
+        padding: 10px 15px;
+        width: 40%;
+        border-radius: 5px;
+        position: relative;
+        z-index: 2;
+        background-color: #F7F9FC;
+    }
+    &__body p{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #222428;
+        width: 80%;
+    }
+    &__img{
+        height: 36px;
+        width: 36px;
+        position: absolute;
+        bottom: 0px;
+    }
+    &__time{
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.428571px;
+
+color: #9BA0AD;
+    }
+    &__date p{
+        text-align: center; 
+        font-family: $exo2;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        opacity: 0.5;
+        padding-top: 3%;
+        padding-bottom: 2%;
+    }
+}
+.send{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(153, 163, 174, 0.146541);
+    display: flex;
+    height: 10%;
+
+    &__input{
+        border: none;
+        outline: none;
+        width: 75%;
+        padding-left: 20px;
+        padding-top:28px;
+        font-family: $roboto;
+        color: #81aef3;
+        resize: none; 
+
+        &::placeholder{
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            color: rgba(218, 218, 218, 0.363);
+            mix-blend-mode: normal;
+            padding-left: 10px; 
+        }
+    }
+    &__msg{
+        box-shadow: 0px 0px 15px rgba(153, 163, 174, 0.259256);
+        border-radius: 7px;
+        width: 36px;
+        height: 36px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: #fff;
+    }
+    &__img{
+        display: flex;
+        width:25%;
+        justify-content: space-evenly;
+        align-items: center;
+        & .send__msg:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+@media (min-width : 320px) and (max-width: 401px){
+    
+}
+@media (min-width : 481px) and (max-width: 820px){
+}

@@ -1,0 +1,75 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #EDF0F4;
+
+    &__friend{
+        height: 16.6%;
+        display: flex;
+        align-items: center;
+    }
+}
+.friend{
+    border-bottom: 1px solid #EDF0F4;
+    position: relative;
+    &__chat{
+        padding-left: 15px;
+        width: 70%;
+    }
+    &__ava{
+        display: block;
+        margin-left: 20px;
+    }
+    &__name{
+        font-family: $exo2;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.571429px;
+        color: #01134E;
+        position: relative;
+        display: inline-block;
+    }
+    &__msg{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: #252F48;
+        padding-top: 5px;
+        mix-blend-mode: normal;
+        opacity: 0.43;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &:hover{
+        background-color: #F7F9FC;
+        cursor: pointer;
+    }
+    &__online{
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: rgb(117, 211, 117);
+        position: absolute;
+        left: 105%;
+        top:0;
+    }
+    &__pin{
+        position: absolute;
+        left: 120%;
+        top: 50%;
+    }
+}
+.active{
+    background-color: #F7F9FC;
+    box-shadow: 0px 5px 5px rgba(190, 200, 212, 0.2), 0px -5px 5px rgba(224, 224, 224, 0.15);
+}
+
+
+@media (min-width : 481px) and (max-width: 820px){
+
+}
