@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     border-right: 1px solid #EDF0F4;
+    border-bottom: 1px solid #EDF0F4;
 
     &__friend{
         height: 16.6%;
@@ -10,7 +11,7 @@
     }
 }
 .friend{
-    border-bottom: 1px solid #EDF0F4;
+    border-top: 1px solid #EDF0F4;
     position: relative;
     &__chat{
         padding-left: 15px;
